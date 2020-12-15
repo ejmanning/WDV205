@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Unit 1 - Specificity Example</title>
+  
+  <style>
+  /*Applies to everything in ordered list*/
+  
+  ol li {color:blue;}
+  
+  /*Applies to only elements in the class*/
+  .purple {color: purple;}
+  
+  /*Applies to only elements in the ID*/
+  #green {color: green;}
+
+
+/*ID has a higher specificity than class, inline style has a higher specificity than both ID and class*/
+	</style>
+</head>
+<body>
+<div id="container">
+
+<h1>Unit 1 Specificity Example</h1>
+
+<ol>
+	<li class ="purple" style = "color:red;">Red</li>
+	<li>Blue</li>
+	<li class = "purple">Purple</li>
+	<li class = "purple" id="green">Green</li>
+	
+</ol>

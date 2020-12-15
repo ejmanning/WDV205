@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Unit 1 - Explain CSS Basic Selectors</title>
+  
+  <style>
+
+div#container	{
+	width:960px;
+	margin:auto;
+	padding:10px;
+	background-color:lightblue;	
+	border:thin solid black;
+}
+
+h1, h2	{text-decoration:underline;}
+
+body	{background-color:#c5a0fa;
+		text-align:left;
+		line-height: 3em;}
+	</style>
+</head>
+<body>
+<div id="container">
+
+<h1>Unit 1 Explain CSS Basic Selectors</h1>
+<h3>(In Order of Lowest to Highest Specificity)</h3>
+</div>
+
+<div id="container">
+
+	<h3>1. Universal Selector</h3>
+	
+	<ul>
+		<li>selects all HTML elements</li>
+		<li>best to use when you need to style a whole page (or majority because you can change specific sections later)</li>
+		<li>symbol = *</li> 
+	</ul>
+
+	<h3>2. Element Selector</h3>
+	
+	<ul>
+		<li>selects HTML elements based on the name of the element</li>
+		<li>best to use when you need to style a whole element like a paragraph or heading</li>
+		<li>no symbol</li> 
+	</ul>
+	
+	<h3>3. Group Selector</h3>
+	
+	<ul>
+		<li>selects multiple HTML elements based on the name of the element</li>
+		<li>best to use when you need to style multiple elements in the same way</li>
+		<li>each selector is separated by a space</li> 
+	</ul>
+	
+	<h3>4. Pseudo Elements</h3>
+	
+	<ul>
+		<li>selects and styles specified parts of an element (eg: first letter)</li>
+		<li>best to use when you need to style one specific thing</li>
+		<li>symbol = selector::pseudo-element</li> 
+	</ul>
+	
+	<h3>5. Descendant Selector</h3>
+	
+	<ul>
+		<li>selects all elements that are inside an element in an element (descendants)</li>
+		<li>best to use when you need to style a section within an element</li>
+		<li>each selector is separated by a space</li> 
+	</ul>
+	
+	<h3>6. Independent Class Selector</h3>
+	
+	<ul>
+		<li>selects HTML elements with a specific class attribute</li>
+		<li>best to use when you need to style a specific section</li>
+		<li>symbol = .class</li> 
+	</ul>
+	
+	<h3>7. Dependent Class Selector</h3>
+	
+	<ul>
+		<li>selects a specific HTML element within a specific class attribute</li>
+		<li>best to use when you need to style a section of a section</li>
+		<li>symbol = p.class</li> 
+	</ul>
+	
+	<h3>8. Pseudo Selector</h3>
+	
+	<ul>
+		<li>selects and styles a special state of an element (eg: mouse over) </li>
+		<li>best to use when you need to style one specific thing</li>
+		<li>symbol = selector:pseudo-class</li> 
+	</ul>
+	
+	<h3>9. Independent ID Selector</h3>
+	
+	<ul>
+		<li>selects HTML elements within a specific ID attribute</li>
+		<li>best to use when you need to style a section (with high specificity)</li>
+		<li>symbol = #ID</li> 
+	</ul>
+	
+	<h3>10. Dependent ID Selector</h3>
+	
+	<ul>
+		<li>selects a specific HTML element within a specific ID attribute</li>
+		<li>best to use when you need to style a section within a section (with high specificity)</li>
+		<li>symbol = p#ID</li> 
+	</ul>
+	
+
+</body>
+</html>

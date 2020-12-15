@@ -1,0 +1,97 @@
+
+
+#container	{height: 100%;
+						width: 80%;
+						margin: 10px auto;
+						background-color: #d4d4d4;}
+
+header	{background-color: #2da1cf;
+				padding: 10px;
+				padding-left: 70px;
+				font-size: 120%;}
+
+header img	{margin-right: 60px;}
+
+nav	{text-align: center;
+		background-color: #0d79a3;
+		padding: 1px;}
+
+ul li {display: inline;
+			padding: 50px;}
+
+section:nth-of-type(1)	{float:left;
+												background-color: ;
+												width: 50%;
+												height: 110%;}
+
+section:nth-of-type(2)	{background-color: ;
+												padding: 50px;
+												margin: 10px;}
+
+
+section:nth-of-type(2) div	{padding: 10px;
+														}
+
+.imageGallery	{margin-left:35px;
+							padding-bottom: 30px;}
+
+.imageGallery img	{height: 160px;
+									width: 170px;
+									margin: 5px;}
+
+p img				{height: 80%;
+						width: 80%;
+						margin-left: 40px;
+						margin-top: 30px;}
+
+form		{float: right;
+				background-color: orange;
+				border: thick solid black;
+				padding: 20px;
+				width: 500px;}
+
+form label	{padding-left: 10px;}
+
+form input[type="text"], textarea	{float: right;
+											width: 400px;}
+form input[type="submit"]	{margin-left: 100px;
+													background-color: lightblue;
+													color: white;
+													border-radius: 10px;
+													float: left;
+													margin-right: 0px;
+												}
+ form input[type="reset"]	{margin-left: 10px;
+	 												background-color: red;
+													color: white;
+													border-radius: 10px;
+													float: left;
+												}
+
+form textarea	{height: 100px;}
+
+.columns	{margin-bottom: 0px;}
+.col1	{width: 23%;
+			float: left;}
+
+.col2	{width: 23%;
+			float: right;}
+
+h3 {text-align: center;}
+
+.clearFloat	{clear: both;}
+
+footer	{background-color: #0d79a3;
+				padding-bottom: 1px;}
+footer img	{height: 5%;
+						width: 5%;
+						float: right;
+						padding-right: 50px;
+						border: none;}
+
+footer h1	{
+					padding-top: 2.5%;
+					padding-bottom: 2.5%;
+					padding-left: 100px;}
+
+img			{border: thin solid black;}

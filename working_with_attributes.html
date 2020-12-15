@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Working with Attribute Selectors</title>
+<style>
+
+body	{background-color: #548be3;}
+
+#formcontainer	{background-color: pink;
+				background-image: linear-gradient(pink, #e35fa1);;
+				border: 2px solid black;
+				width: 70%;
+				height: 50%;
+				margin: 40px auto; 
+				align-items: center;
+				padding: 20px;
+				border-radius: 20px;
+				box-shadow: 10px 10px 5px black;}
+h1	{text-align: center;}
+
+#contactform	{text-align: right;
+				font-size: 200%;}	
+
+input[type="text"]	{height: 50px;
+					width: 800px;
+					font-size: 30px;
+					margin-right: 20px;
+					background-color: #cfe1ff;
+					border-radius: 10px;}
+
+#topic	{width: 825px;}
+
+textarea	{border-radius: 20px;
+			padding: 15px;}
+			
+input[type="submit"], input[type="reset"] {
+	color:white;
+	background-color: #367fff;
+	border-radius: 20px;
+	padding: 10px;
+	width: 20%;
+	margin-right: 60px;}
+
+</style>
+</head>
+
+<body>
+<div id="formcontainer">
+<h1>Contact Us!</h1>
+	<form id="contactform" method="post" action="#">
+	
+			<p>
+				<label>First Name:
+					<input type="text" name="inputFirstName" id="inputFirstName">
+				</label>
+			</p>
+			<p>
+				<label>Last Name:</label>
+					<input type="text" name="inputLastName" id="inputLastName">
+			</p>
+			
+			<p>
+				<label>Email:</label>
+					<input type="text" name="inputLastName" id="inputLastName">
+			</p>
+		
+			<p>
+				<label>Phone Number:</label>
+					<input type="text" name="inputLastName" id="inputLastName">
+			</p>
+			
+			<p>
+				<label for="topic">Topic</label>
+			<select id="topic" name="topic">
+				<option default>Please choose a topic</option>
+				<option value="aboutus">About Us</option>
+			 	<option value="additional_questions">Additional Questiona</option>
+			 	<option value="joining_our_team">Joining Our Team</option>
+			 	<option vaule="other">Other</option>
+			</select>
+			</p>
+		
+		
+			<p>
+			<label for="message">Message:</label>
+			<textarea id="message" name="message" rows="10" cols="115"></textarea>
+			<p>
+		
+				<input type="reset" name="reset" value="Reset">
+				<input type="submit" name="submit" value="Submit">
+		</form>
+</div>
+</body>
+</html>

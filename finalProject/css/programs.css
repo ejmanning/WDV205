@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'archisticonormal';
+    src: url('../fonts/Archistico_Simple-webfont.eot');
+    src: url('../fonts/Archistico_Simple-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Archistico_Simple-webfont.woff2') format('woff2'),
+         url('../fonts/Archistico_Simple-webfont.woff') format('woff'),
+         url('../fonts/Archistico_Simple-webfont.ttf') format('truetype'),
+         url('../fonts/Archistico_Simple-webfont.svg#archisticonormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'archisticobold';
+    src: url('../fonts/Archistico_Bold-webfont.eot');
+    src: url('../fonts/Archistico_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Archistico_Bold-webfont.woff2') format('woff2'),
+         url('../fonts/Archistico_Bold-webfont.woff') format('woff'),
+         url('../fonts/Archistico_Bold-webfont.ttf') format('truetype'),
+         url('../fonts/Archistico_Bold-webfont.svg#archisticobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'pusabregular';
+    src: url('../fonts/PUSAB___-webfont.eot');
+    src: url('../fonts/PUSAB___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/PUSAB___-webfont.woff2') format('woff2'),
+         url('../fonts/PUSAB___-webfont.woff') format('woff'),
+         url('../fonts/PUSAB___-webfont.ttf') format('truetype'),
+         url('../fonts/PUSAB___-webfont.svg#pusabregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  background-color: lightblue;
+}
+
+header {
+  text-align: center;
+  padding: 40px;
+  background-color: #f9ff87;
+}
+
+header h1 {
+  color: white;
+  text-align: center;
+  font-family: "pusabregular";
+  font-size: 350%;
+  font-weight: bold;
+  -webkit-text-stroke: 2px black;
+  position: relative;
+  animation-name: move;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+  
+}
+
+@keyframes move {
+  from {
+    right: -2000px;
+  }
+  to {
+    right: 0px;
+  }
+}
+
+
+header img {
+  width: 15%;
+  height: 15%;
+  position: relative;
+  animation-name: moving;
+  animation-iteration-count: 1;
+  animation-duration: 3s;
+}
+
+@keyframes moving {
+  from {
+    top: -290px;
+  }
+  to {
+    top: 0px;
+  }
+}
+
+.navbar {
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  left: -100;
+  z-index: 1;
+  width: 100%;
+  border: 5px solid #e9d1ff;
+}
+
+nav ul li {
+  font-size: 150%;
+  font-weight: bold;
+}
+
+main h1 {
+  text-align: center;
+  font-family: "pusabregular";
+  font-size: 350%;
+  background-color: white;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  border-top: 5px dashed black;
+  border-bottom: 5px dashed black;
+}
+
+div.prog {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  padding-left: 6%;
+  padding-right: 5%;
+  position: relative;
+  animation-name: fromLeft;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes fromLeft {
+  from {
+    left: -3000px;
+  }
+  to {
+    left: 0px;
+  }
+}
+
+div.ind {
+  width: 30%;
+  padding: 1.5%;
+  margin: 1.6%;
+  margin-bottom: 10%;
+  background-color: #ffb940;
+  border: 3px dashed white;
+  border-radius: 70px;
+  box-shadow: red 30px -30px;
+}
+
+div.ind img {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.ind h3 {
+  text-align: center;
+  font-family: monospace;
+  font-weight: bold;
+  font-size: 300%;
+  -webkit-text-stroke: 1px white;
+}
+
+div.ind p {
+  padding-top: 2%;
+}
+
+footer {
+  display: flex;
+  padding: 2%;
+  background-color: #f9ff87;
+  border-bottom: 15px solid purple;
+  border-top: 15px solid purple;
+}
+
+footer p {
+  padding-top: 3%;
+  font-size: 210%;
+  font-weight: bold;
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+footer img {
+  flex: 10%;
+  width: 5%;
+  height: 5%;
+}
+
+footer p:nth-of-type(1) {
+  flex: 33%;
+  text-align: left;
+}
+
+footer p:nth-of-type(2) {
+  flex: 33%;
+  text-align: right;
+}
+
+@media only screen and (max-width: 1000px) {
+  div .ind {
+    width: 40%;
+    margin-top: 15%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  div .ind {
+    width: 100%;
+    margin-top: 15%;
+  }
+
+  div .ind p {
+    padding: 5%;
+  }
+
+  footer {
+    display: block;
+  }
+
+  footer p {
+    font-size: 120%;
+    color: black;
+  }
+
+  footer p:nth-of-type(1) {
+    text-align: center;
+  }
+
+  footer p:nth-of-type(2) {
+    text-align: center;
+  }
+
+  footer img {
+    width: 15%;
+    margin-right: 42.5%;
+    margin-left: 42.5%;
+  }
+}
+
+/*# sourceMappingURL=programs.css.map */

@@ -1,0 +1,118 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>2 column layout</title>
+
+<link href = "layout_3col.css" rel="stylesheet" type="text/css">
+<style>
+section:nth-of-type(1)	{background-color: orange;
+												width: 25%;
+												height: 350px;
+												float: left;
+												border-right: 2px solid black;
+												padding: 10px;}
+
+section:nth-of-type(2)	{background-color: lightblue;
+												width: 50%;
+												height: 350px;
+												float: left;
+												padding: 10px;}
+
+section:nth-of-type(3)	{background-color: orange;
+												width: 25%;
+												height: 350px;
+												float: left;
+												border-left: 2px solid black;
+												padding: 10px;}
+
+.clearFloat							{clear: both;}
+
+#columns 								{margin-top: 20px;
+												margin-left: 30px;
+												margin-right: 30px;
+												margin-bottom: 20px;
+												border: 3px solid black;}
+
+img[alt="htmlsymbol"]		{float: right;
+												padding: 15px;}
+
+img[alt="csssymbol"]		{float: left;
+												padding: 15px;}
+
+img[alt="jssymbol"]			{float: right;}
+
+.clearFix::after				{content: "";
+												clear: both;
+												display: table;}
+
+footer									{background-color: navy;
+												color: white;
+												border-bottom-left-radius: 23px;
+											 	border-bottom-right-radius: 23px;
+											 	padding: 20px;
+												height: 200px;}
+</style>
+
+</head>
+<body>
+
+<div id="container">
+		<header>
+  		<h1>WDV205 Advanced CSS</h1>
+		<h3>Layout - Formatting a Navigation Bar</h3>
+  	</header>
+	    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Products</li>
+            <li>Services</li>
+            <li>Gallery</li>
+            <li>Contact Us</li>
+        </ul>
+    </nav>
+
+	<h3>Layout - Formatting Multiple Columns</h3>
+	<p> Use the CSS float property to create three columns of the following content.</p>
+
+    <div id="columns" class="clearFix">
+		<section>
+			<h4>Left Column</h4>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis velit id varius elementum. Duis eget nulla commodo risus malesuada eleifend. Duis aliquet nunc arcu, a tincidunt nisl bibendum consectetur. Praesent aliquam a nibh vel fringilla. In sagittis erat quis euismod condimentum. Praesent massa quam, ultricies et aliquet sed, semper vitae orci. </p>
+    	</section>
+
+        <section>
+			<h4>Center Column</h4>
+			<!-- Float the following image right. Include a small left margin.-->
+			<img src="html5.jpg" alt="htmlsymbol">
+			<p>Donec nibh ex, congue ac ligula venenatis, hendrerit gravida metus. Quisque felis est, vehicula nec quam ac, congue molestie sapien. Aliquam vel vehicula nulla. Etiam nisl justo, facilisis eu nibh non, convallis ultrices ligula. Curabitur volutpat auctor molestie. </p>
+			<!-- Clear the folloiwng heading from the float above-->
+			<h4>Images with float and clear.</h4>
+			<!-- Float the following image left. Include a small right margin.-->
+			<img src="css3.jpg" alt="csssymbol">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sagittis velit id varius elementum. Duis eget nulla commodo risus malesuada eleifend. Duis aliquet nunc arcu, a tincidunt nisl bibendum consectetur. Praesent aliquam a nibh vel fringilla. In sagittis erat quis euismod condimentum.</p>
+        </section>
+
+		<section>
+			<h4>Right Column</h4>
+			<p>Mauris dapibus et tellus ut hendrerit. Etiam luctus ultrices erat semper feugiat. Maecenas vehicula erat vitae nisl pharetra, quis tristique leo blandit. In lorem nisi, iaculis sit amet nulla vitae, imperdiet dapibus sapien. Quisque ac ornare ex. Nunc sit amet ultrices arcu. Mauris in ultricies risus, ac semper sapien.</p>
+		</section>
+
+						<div class="clearFloat"</div>
+
+        </div>
+
+    </div>
+
+
+	<!--Apply a right float to the image below. Without the clearfix hack class this image bumps outside of the footer container. Apply the clearfix class in the footer element.-->
+    <footer>
+    	<h3>Layout Using Clearfix</h3>
+		<img src="javascript.jpg" alt="jssymbol">
+    	<p>In lorem nisi, iaculis sit amet nulla vitae, imperdiet dapibus sapien. Quisque ac ornare ex. Nunc sit amet ultrices arcu. Mauris in ultricies risus, ac semper sapie. </p>
+   </footer>
+
+
+</div> <!--close container div-->
+</body>
+</html>
